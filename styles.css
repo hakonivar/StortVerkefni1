@@ -1,0 +1,283 @@
+text {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2em;
+  padding: 2em;
+
+  width: 100%;
+  min-height: 500px;
+
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  text-align: center;
+}
+
+header .content {
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.3em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+header h2 {
+  font-size: 2.3em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+@media screen and (max-width:600px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2em;
+    padding: 2em;
+    max-width: 100%;
+
+    min-height: 500px;
+
+    background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+ul {
+    font-family: 'Roboto Slab', serif;
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: -8px;
+    padding: 7px;
+    overflow: hidden;
+    background-color: #333;
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+
+li:first-of-type{
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  float: right;
+  margin-right: 8px;
+}
+
+li a:hover {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.button {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 34%;
+  white-space: nowrap;
+
+  color: #eee;
+  background-color: #666;
+
+ font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+  text-decoration: none;
+  text-align: center;
+
+}
+
+  .button:hover {
+    color: #eee;
+    background-color: #333;
+}
+.button a{
+  color: white;
+  text-decoration: none;
+}
+
+.profile__img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile__content {
+  text-align: center;
+}
+.profile__heading {
+  font-style: italic;
+  font-size: 20px;
+}
+.profile__text2 {
+  font-size: 12px;
+  color: #808080;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+
+.content2 h3 {
+  margin-left: 32px;
+}
+figure {
+  float: right;
+  margin: 2em 0 2em 2em;
+}
+
+footer {
+  font-size: 16px;
+  display: flex;
+  padding: 3em;
+  color: white;
+  background-color: rgb(60, 60, 60);
+
+}
+footer p {
+  margin: auto;
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size:8px;
+  color: #D3D3D3;
+  margin:auto;
+}
+.line {
+  border-top-style: solid;
+  border-top-color: #808080;
+  border-top-width: medium;
+}
+
+blockquote {
+height:24%;
+width: 24%;
+display:block;
+float:right;
+font-size:1.2rem;
+font-style: italic;
+margin: 1em 1em 2em 9em;
+font-family: 'Open Sans', sans-serif;
+}
+
+blockquote>em {
+font-family: 'Roboto Slab', serif;
+font-style: normal;
+font-size: 0.7rem;
+margin-top: 0.5em;
+}
+
+p {
+font-family: 'Roboto Slab', serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.parent > div {
+  flex: 1;
+  width: 100%;
+}
+.image {
+
+  width: 100%;
+}
+.parent2 {
+  display: flex;
+  align-items: center;
+}
+.parent2 > div {
+  flex: 1;
+}
+.checkmerki {
+  margin-top: 64px;
+}
+@media screen and (max-width:400px) {
+  .parent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .image {
+    max-width: 380px;
+    margin-top: 50px;
+
+  }
+  .parent2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profile__img {
+    max-width: 380px;
+  }
+
+}
+@media screen and (min-width:400px) and (max-width:600px){
+  .parent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .image {
+    max-width: 380px;
+    margin-top: 50px;
+
+  }
+  .parent2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .content2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profile__img {
+    width: 250px;
+  }
+
+}
